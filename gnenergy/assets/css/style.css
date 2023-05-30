@@ -1,0 +1,87 @@
+	@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+	
+	:root{
+		--font-estilo-1: 'Lato', sans-serif;
+		--color-primary:#ffcf2c;
+		--color-secondary:#32b5ff;
+		--color-text:#000;
+		--radius-btn: 10px;
+	}
+
+	/* Padrao */
+	html{scroll-behavior:smooth}
+	img{max-width:100%;height:auto}
+	h1,h2,h3,h4,h5,h6{margin:0 0 10px;font-weight:bold;font-family: var(--font-estilo-1);color: var(--color-primary);}
+	p{margin-bottom:10px;font-weight:400}
+	p:empty{margin:0}
+	ul li{padding:1px 0}
+	input:focus,textarea:focus{color:var(--color-text)}
+	input::placeholder,textarea::placeholder{color:var(--color-text)}
+	input, textarea, select{background-color:#f5f5f5;width:100%;border:none;padding: 10px 15px;border-radius: var(--radius-btn);margin-bottom: 10px;}
+	input[type="submit"]{background-color:var(--color-primary);padding:10px;color:#fff;display:block}
+	input[type="submit"]:disabled{cursor:not-allowed}
+	input[type="radio"]{width: auto;}
+	
+	body{font-size:16px;letter-spacing:1px;color:var(--color-text);font-family: var(--font-estilo-1);overflow-x:hidden;}
+	/*
+	h1{font-size:38px;line-height:1.2;letter-spacing:1px}
+	h2{font-size:35px;line-height:1.2;letter-spacing:1px}
+	h3{font-size:30px;line-height:1.2;letter-spacing:1px}
+	*/
+	
+	a{transition:.6s ease;color:var(--color-text);text-decoration: none;}
+	a:hover{color:var(--color-primary);font-weight:600}
+	a:focus{outline:0px solid}
+	label a:hover{color:var(--color-primary);text-decoration:underline}
+	.sticky-top{z-index:0!important;top:125px!important}
+	
+	.color-primary{color:var(--color-primary)!important}
+	.color-secondery{color:var(--color-secondary)!important}
+	.color-black{color:#000!important}
+	.color-white{color:#fff!important}
+
+	.bg-estilo-primary{background-color:var(--color-primary)}
+	.bg-estilo-secondery{background-color:var(--color-secondary)}
+	.bg-estilo-white{background-color: #fff;}
+	.align-center{display:flex;align-items:center;justify-content:center}
+	.image-box{position:relative;margin:auto;}
+	.image-box img{transition:all 2s;transform:scale(1)}
+	.image-box:hover img{transform:scale(1.06)}
+
+	#banner_page{background-color:var(--color-secondary);padding: 2rem 0;}
+	#banner_page h1{margin: 0;}
+	#banner-home{background-image: url(http://localhost/gnenergy/img/banner_topo.jpg);background-position: center;background-repeat: no-repeat;background-size: cover;height: 75vh;}
+	#banner-home {position: relative;}
+	#banner-home .box{position: absolute;left: 10%;top: 50%;transform: translateY(-50%);width: 50%;}
+	#banner-home .botao-contato a:hover{color: #fff;}
+
+	#sobre_home h2, #sobre_home p{color: #fff;}
+
+	#servicos_home .box{height: 100%;}
+	#servicos_home .box figure{height: 40%;}
+	#servicos_home .box img{object-fit: cover;height: 100%;width: 100%;}
+
+	#servicos_home img,#galeria img{border-radius:var(--radius-btn);}
+
+	#depoimento{background-image: url(http://localhost/gnenergy/img/bg_depoimentos.jpg);background-size: cover;background-attachment: fixed;}
+	#depoimento blockquote{font-size: 22px;font-weight: bold;}
+	#depoimento blockquote, #depoimento cite{color: #fff;}
+
+	#contato ul{list-style: none;}
+	#contato form{border: 2px solid var(--color-primary);padding: 2rem;border-radius: var(--radius-btn);}
+
+	.internas img{width: 100%;border-radius: var(--radius-btn)}
+	.internas article{padding-right: 2rem;}
+	.internas .menu_sidebar ul{list-style: none;padding: 0;}
+	.internas .menu_sidebar ul li{border: 2px solid var(--color-primary);border-radius: var(--radius-btn);padding: 10px;margin-bottom: 1rem;box-shadow: 1px 4px 2px #ccc;}
+
+	.botao-primary a{background-color:transparent;border: 2px solid var(--color-primary);border-radius: var(--radius-btn);padding:10px 25px;font-weight: 400;color:var(--color-primary);;transition:all 0.5s;}
+	.botao-primary a:hover{transform: scale(1.02);}
+
+	#footer{background-color: var(--color-primary);padding: 2rem 0;}
+
+	@media all and (min-width: 992px) {
+		.navbar .nav-item .dropdown-menu{ display: none; }
+		.navbar .nav-item:hover .dropdown-menu{ display: block; }
+		.navbar .nav-item .dropdown-menu{ margin-top:0; }
+	}
